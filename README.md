@@ -1,1 +1,1 @@
-# CS-UNI-2024-II-IntrProg-
+# CS-UNI-2024-II-IntrProg
