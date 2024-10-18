@@ -3,6 +3,7 @@
 #include "sorting.h"
 #include "files.h"
 #include "vector.h"
+#include "matriz.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ int main(){
     // Pointers();
     // Sorting();
     // DemoFiles();
-    VectorDemo();
+    // VectorDemo();
+    MatrizDemo();
 	return 0;
 }
