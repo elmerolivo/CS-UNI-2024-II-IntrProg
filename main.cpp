@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// g++ -std=c++17 main.cpp pointers.cpp sorting.cpp files.cpp vector.cpp -o main
+// g++ -std=c++17 main.cpp pointers.cpp sorting.cpp files.cpp vector.cpp matriz.cpp -o main
 
 int main(){
     cout << "Hello Introd Programacion CS-UNI\n";
