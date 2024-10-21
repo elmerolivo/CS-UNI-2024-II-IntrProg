@@ -9,4 +9,5 @@ using T = unsigned int;
 void SwapBits(T &var1, T &var2, size_t pos);
 void PrintByBits(ostream &os, T &num);
 void BitsDemo();
+void BitsPlayground();
 #endif

@@ -15,6 +15,20 @@ int main(){
     // Sorting();
     // DemoFiles();
     // VectorDemo();
+    // BitsPlayground();
     BitsDemo();
+
+    // int x = 5, y;
+    // if( x < 7)
+    //     y = 10;
+    // else
+    //     y = 20;
+
+    // y = 20;
+    // if( x < 7 )
+    //     y = 10;
+
+    // y = x<7? 10 : 20 ;
+
 	return 0;
 }
