@@ -85,17 +85,47 @@ float Division(float a, float b){
     return a/b;
 }
 
+int GetMenuOption(){
+int opt;
+    cout << "Escoja la operación [0,1,2,3]:" << endl;
+    cout << "0 Suma"           << endl;
+    cout << "1 Resta"          << endl;
+    cout << "2 Multiplicacion" << endl;
+    cout << "3 Division"       << endl;
+
+    cout << "4 Salir"       << endl;
+    cin  >> opt;
+    return opt;
+}
+
 void DemoSingleFunctionPointers(){
     float (*pff)(float, float) = &Suma;
     float a1 = 3.1, a2 = 5.2, rpta;
 
     rpta = (*pff)(a1, a2);
-    cout << "Suma de " << a1 << " y " << a2 << ": " << rpta << endl;
+    cout << "DemoSingleFunctionPointers: Suma de " << a1 << " y " << a2 << ": " << rpta << endl;
 }
 
-
+void DemoFunctionPointersArray(){
+    float (*apf[4])(float, float) = {&Suma, &Resta, &Multiplicacion, &Division};
+    float a1 = 30, a2 = 5.2, rpta;
+    int opt = -1;
+    cout << "Ingrese operando#1: "; cin >>a1;
+    cout << "Ingrese operando#2: "; cin >>a2;
+    do{
+        opt = GetMenuOption();
+        if( opt >= 0 && opt <= 3 ){
+            rpta = (*apf[opt])(a1, a2);
+            cout << "DemoFunctionPointersArray: Suma de " << a1 << " y " << a2 << ": " << rpta << endl;
+        }
+        else if( opt == 4 )
+            return;
+        else
+            cout << "Opcion fuera de rango. Vuelva a intentar" << endl;
+    } while (opt < 0 || opt > 3);
+}
 
 void DemoFunctionPointers(){
     DemoSingleFunctionPointers();
-    
+    DemoFunctionPointersArray();
 }

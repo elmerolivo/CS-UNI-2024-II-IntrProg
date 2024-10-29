@@ -13,4 +13,6 @@ float Multiplicacion(float a, float b);
 float Division(float a, float b);
 void  DemoFunctionPointers();
 
+int GetMenuOption();
+
 #endif // __POINTERS_H__
