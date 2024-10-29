@@ -122,7 +122,7 @@ void DemoFunctionPointersArray(){
             return;
         else
             cout << "Opcion fuera de rango. Vuelva a intentar" << endl;
-    } while (opt < 0 || opt > 3);
+    } while (opt != 4);
 }
 
 void DemoFunctionPointers(){
