@@ -16,8 +16,9 @@ int main(){
     // DemoFiles();
     // VectorDemo();
     // BitsPlayground();
-    BitsDemo();
-
+    // BitsDemo();
+    DemoFunctionPointers();
+    
     // int x = 5, y;
     // if( x < 7)
     //     y = 10;

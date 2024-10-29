@@ -68,3 +68,34 @@ void Pointers(){
     f4(q);      cout << "y=" << y << endl;
                 cout << "q=" << q << endl;
 }
+
+float Suma(float a, float b){
+    return a+b;
+}
+
+float Resta(float a, float b){
+    return a-b;
+}
+
+float Multiplicacion(float a, float b){
+    return a*b;
+}
+
+float Division(float a, float b){
+    return a/b;
+}
+
+void DemoSingleFunctionPointers(){
+    float (*pff)(float, float) = &Suma;
+    float a1 = 3.1, a2 = 5.2, rpta;
+
+    rpta = (*pff)(a1, a2);
+    cout << "Suma de " << a1 << " y " << a2 << ": " << rpta << endl;
+}
+
+
+
+void DemoFunctionPointers(){
+    DemoSingleFunctionPointers();
+    
+}
