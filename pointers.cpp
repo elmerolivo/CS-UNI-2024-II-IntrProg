@@ -89,7 +89,7 @@ void DemoSingleFunctionPointers(){
     float (*pff)(float, float) = &Suma;
     float a1 = 3.1, a2 = 5.2, rpta;
 
-    rpta = (*pff)(a1, a2);
+    rpta = (*pff)(a1, a2); // rpta = Suma(a1, a2);
     cout << "Suma de " << a1 << " y " << a2 << ": " << rpta << endl;
 }
 
