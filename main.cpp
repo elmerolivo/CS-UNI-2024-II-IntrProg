@@ -13,13 +13,13 @@ using namespace std;
 int main(){
     cout << "Hello Introd Programacion CS-UNI\n";
     // Pointers();
-    // Sorting();
+    Sorting();
     // DemoFiles();
     // VectorDemo();
     // BitsPlayground();
     // BitsDemo();
     // DemoFunctionPointers();
-    DemoStruct();
+    // DemoStruct();
 
     // int x = 5, y;
     // if( x < 7)
