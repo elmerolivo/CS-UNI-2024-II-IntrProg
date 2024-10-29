@@ -101,12 +101,12 @@ void DemoSingleFunctionPointers(){
     float (*pff)(float, float) = &Suma;
     float a1 = 3.1, a2 = 5.2, rpta;
 
-    rpta = (*pff)(a1, a2);
+    rpta = (*pff)(a1, a2); // rpta = Suma(a1, a2);
     cout << "DemoSingleFunctionPointers: Suma de " << a1 << " y " << a2 << ": " << rpta << endl;
 }
 
 void DemoFunctionPointersArray(){
-    float (*apf[4])(float, float) = {&Suma, &Resta, 
+    float (*apf[4])(float, float) = {&Suma, &Resta, // comentario
                                      &Multiplicacion, &Division};
     float a1, a2, rpta;
     int opt = -1;
