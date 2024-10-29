@@ -1,6 +1,6 @@
 #ifndef __STRUCT_H__
 #define __STRUCT_H__
-
+#include <iostream>
 #include <string>
 
 // #include <cstddef> // size_t
@@ -11,8 +11,8 @@ struct ALU{
     string name;
 };
 
-void PrintAlu(ALU &alu);
-void PrintAlu(ALU *pAlu);
+ostream &PrintAlu(ostream &os, ALU &alu);
+ostream &PrintAlu(ostream &os, ALU *pAlu);
 
 void DemoStruct();
 
