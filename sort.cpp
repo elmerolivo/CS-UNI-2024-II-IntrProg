@@ -1,6 +1,6 @@
-#include <ostream>
+#include <iostream>
 #include <algorithm>    // std::swap
-#include "Sort.h"
+#include "sort.h"
 
 using namespace std;
 
@@ -36,4 +36,10 @@ void Print(int arr[], int tamaño) {
         cout << arr[i] << " ";
     }
     cout << endl;
+}
+
+void SortDemo(){
+    int v[10] = {5,2,10,70,45, 8, 9, 7, 15, 23};
+    QuickSort(v, 0, 10);
+    Print(v, 10);
 }

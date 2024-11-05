@@ -1,6 +1,7 @@
 #include <iostream>
 #include "pointers.h"
 #include "sorting.h"
+#include "sort.h"
 #include "files.h"
 #include "vector.h"
 #include "bits.h"
@@ -8,12 +9,13 @@
 
 using namespace std;
 
-// g++ -std=c++17 main.cpp pointers.cpp sorting.cpp files.cpp vector.cpp bits.cpp struct.cpp -o main
+// g++ -std=c++17 main.cpp pointers.cpp sorting.cpp sort.cpp files.cpp vector.cpp bits.cpp struct.cpp -o main
 
 int main(){
     cout << "Hello Introd Programacion CS-UNI\n";
     // Pointers();
-    Sorting();
+    // Sorting();
+    SortDemo();
     // DemoFiles();
     // VectorDemo();
     // BitsPlayground();
