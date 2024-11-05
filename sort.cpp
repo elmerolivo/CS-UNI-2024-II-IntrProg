@@ -1,45 +1,11 @@
-#include <iostream>
-#include <algorithm>    // std::swap
 #include "sort.h"
-
-using namespace std;
-
-// Función para particionar el arreglo
-int particionar(int arr[], int bajo, int alto) {
-    int pivote = arr[alto]; // Elegimos el último elemento como pivote
-    int i = bajo - 1; // Índice del elemento más pequeño
-
-    for (int j = bajo; j < alto; j++) {
-        if (arr[j] <= pivote) {
-            i++; // Incrementar el índice del elemento más pequeño
-            swap(arr[i], arr[j]); // Intercambiar
-        }
-    }
-    swap(arr[i + 1], arr[alto]); // Colocar el pivote en la posición correcta
-    return i + 1; // Retornar el índice del pivote
-}
-
-// Función recursiva para aplicar QuickSort
-void QuickSort(int arr[], int bajo, int alto) {
-    if (bajo < alto) {
-        int pi = particionar(arr, bajo, alto); // Particionar el arreglo
-
-        // Ordenar recursivamente los elementos antes y después de la partición
-        QuickSort(arr, bajo, pi - 1);
-        QuickSort(arr, pi + 1, alto);
-    }
-}
-
-// Función para mostrar el arreglo
-void Print(ostream &os, int arr[], int tamaño) {
-    for (int i = 0; i < tamaño; i++) {
-        os << arr[i] << " ";
-    }
-    os << endl;
-}
 
 void SortDemo(){
     int v[10] = {5,2,10,70,45, 8, 9, 7, 15, 23};
     QuickSort(v, 0, 9);
     Print(cout, v, 10);
+
+    float w[10] = {5.3,2.1,10.5,70.4,45.3, 8.7, 9.2, 1.5, 2.5, 2.3};
+    QuickSort(w, 0, 9);
+    Print(cout, w, 10);
 }
