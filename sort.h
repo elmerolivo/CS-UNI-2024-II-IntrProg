@@ -6,11 +6,11 @@ using namespace std;
 
 // Función para particionar el arreglo
 template <typename T>
-int particionar(T arr[], int bajo, int alto) {
+size_t particionar(T arr[], size_t bajo, size_t alto) {
     T pivote = arr[alto]; // Elegimos el último elemento como pivote
-    int i = bajo - 1; // Índice del elemento más pequeño
+    size_t i = bajo - 1; // Índice del elemento más pequeño
 
-    for (int j = bajo; j < alto; j++) {
+    for (size_t j = bajo; j < alto; j++) {
         if (arr[j] <= pivote) {
             i++; // Incrementar el índice del elemento más pequeño
             swap(arr[i], arr[j]); // Intercambiar
@@ -22,9 +22,9 @@ int particionar(T arr[], int bajo, int alto) {
 
 // Función recursiva para aplicar QuickSort
 template <typename T>
-void QuickSort(T arr[], int bajo, int alto) {
+void QuickSort(T arr[], size_t bajo, size_t alto) {
     if (bajo < alto) {
-        int pi = particionar(arr, bajo, alto); // Particionar el arreglo
+        size_t pi = particionar(arr, bajo, alto); // Particionar el arreglo
 
         // Ordenar recursivamente los elementos antes y después de la partición
         QuickSort(arr, bajo, pi - 1);
@@ -34,8 +34,8 @@ void QuickSort(T arr[], int bajo, int alto) {
 
 // Función para mostrar el arreglo
 template <typename T>
-void Print(ostream &os, T arr[], int size) {
-    for (int i = 0; i < size; i++) {
+void Print(ostream &os, T arr[], size_t size) {
+    for (size_t i = 0; i < size; i++) {
         os << arr[i] << " ";
     }
     os << endl;
