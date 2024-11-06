@@ -11,7 +11,7 @@ int partition(T arr[], int low, int high) {
     int j = high;
 
     while (true) {
-        // Por la izq deben estar los menores
+        // Por la izq deben estar los menores 
         while (i <= j && arr[i] <= pivot)   i++;
         // Por la der deben estar los mayores
         while (i <= j && arr[j] > pivot)    j--;
