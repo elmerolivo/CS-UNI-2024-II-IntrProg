@@ -28,6 +28,7 @@
         "shared_mutex": "cpp",
         "stop_token": "cpp",
         "thread": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "iomanip": "cpp"
     }
 }
