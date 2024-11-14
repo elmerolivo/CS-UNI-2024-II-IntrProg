@@ -8,7 +8,7 @@ void SortDemo(){
     QuickSort(v, 0, 9, &may<int>);
     Print(cout, v, 10);
 
-    float w[10] = {5.3, 2.1, 10.5, 70.4, 45.3, 8.7, 9.2, 1.5, 2.5, 2.3};
+    float w[10] = {5.3, 2.c1, 10.5, 70.4, 45.3, 8.7, 9.2, 1.5, 2.5, 2.3};
     QuickSort(w, 0, 9, &may<float>);
     Print(cout, w, 10);
 
@@ -40,7 +40,7 @@ void SortDemo(){
     cout << "*******************************\n";
 
     cout << "Ascending Sort by mm/dd:" << endl;
-    QuickSort(vAlu, 0, 9, [](Alu &a, Alu &b){ return a.mm > b.mm || a.dd > b.dd; });
+    QuickSort(vAlu, 0, 9, [](Alu &a, Alu &b){ return a.mm > b.mm ||( a.mm==b.mm && a.dd<a.dd); });
     Print(cout, vAlu, 10, "\n");
     cout << "*******************************\n";
 }
